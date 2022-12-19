@@ -1,0 +1,70 @@
+## CREATION D'UNE TABLE
+CREATE TABLE Fiara (idFiara,Marika,Motera,Matricul)
+
+## INSERTION DES DONNEES
+INSERT INTO Joueurs VALUES (1,LC300,V8,1300TVA)
+INSERT INTO Joueurs VALUES (2,Q8,V6 TFSI,0091TBQ)
+INSERT INTO Joueurs VALUES (3,RangeSVR,V8 575ch,7766TBB)
+INSERT INTO Joueurs VALUES (4,Golf7R,2.0TSI,0123TQL)
+INSERT INTO Joueurs VALUES (5,Mercedes gle63's,V8 bi-tubo,1221WWT)
+INSERT INTO Joueurs VALUES (6,BM X6,V6 4.4L,314 524)
+
+## AFFICHER LA TABLE
+SELECT * FROM Fiara
+
+## AFFICHER LA TABLE AVEC DES COLONNES SPECIFIQUES
+SELECT Marika,Matricul FROM Fiara
+SELECT Marika,Motera FROM Fiara
+
+## AFFICHER LA TABLE AVEC UNE CONDITION
+SELECT * FROM Fiara WHERE Marika=RangeSVR
+
+## AFFICHER LA TABLE AVEC DES COLONNES SPECIFIQUES ET UNE CONDITION
+SELECT idFiara,Motera FROM Fiara WHERE Marika=BM X6
+
+## MODIFICATION D'UNE TABLE
+UPDATE Fiara SET Motera=2.0TSI WHERE idFiara=5
+SELECT * FROM Fiara
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+## CREATION D'UNE TABLE
+CREATE TABLE Etudiant (idEtudiant,Nom,Replique)
+
+## INSERTION DES DONNEES
+INSERT INTO Etudiant VALUES (1,Elyse,Aonaa?)
+INSERT INTO Etudiant VALUES (2,Sitraka,TenaManoa)
+INSERT INTO Etudiant VALUES (3,Mirado,AnyAnh)
+INSERT INTO Etudiant VALUES (4,Heja,Garbajy)
+
+## AFFICHER LA TABLE
+SELECT * FROM Etudiant
+
+## AFFICHER LA TABLE AVEC DES COLONNES SPECIFIQUES
+SELECT Nom,Replique FROM Etudiant
+SELECT Replique FROM Etudiant
+
+## AFFICHER LA TABLE AVEC UNE CONDITION
+SELECT * FROM Etudiant WHERE Replique=AnyAnd
+
+## AFFICHER LA TABLE AVEC DES COLONNES SPECIFIQUES ET UNE CONDITION
+SELECT idEtudiant,Nom FROM Etudiant WHERE Replique=Garbajy
+
+## MODIFICATION D'UNE TABLE
+UPDATE Etudiant SET Nom=Heja WHERE idEtudiant=2
+SELECT * FROM Etudiant
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+## GESTION DES ERREURS
+* * Erreur de syntaxe
+INSERT INTO Fiara VALUES (7,Renaul4L,2ch,0001ETU,Erreur)
+
+* * Commande introuvable
+DELETE FROM Fiara
+
+* * Exception
+SELECT * FROM table
